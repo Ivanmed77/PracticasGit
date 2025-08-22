@@ -10,6 +10,7 @@ on: #When this workflow is executing, in this case when a push is done to main
 
 permissions: #Permissions needed, permissions to read the content
   contents: read
+  packages: write
 
 jobs: # What this CI/CD pipeline need to execute
   build_and_test:
