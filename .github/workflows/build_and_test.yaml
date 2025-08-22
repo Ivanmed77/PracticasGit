@@ -38,4 +38,4 @@ jobs: # What this CI/CD pipeline need to execute
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: ghcr.io/Ivanmed77/practicasgit:latest
+        tags: ghcr.io/ivanmed77/practicasgit:latest
