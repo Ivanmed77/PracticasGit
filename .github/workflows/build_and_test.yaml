@@ -49,8 +49,8 @@ jobs: # What this CI/CD pipeline need to execute
     - name: Deploy to EC2 via SSH
       uses: appleboy/ssh-action@v1.0.0
       with:
-        host: ${{ secrets.50.17.55.245 }}
-        username: ${{ secrets.ubuntu }}
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           echo "Login to GHCR"
